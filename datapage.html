@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather info</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+    table{
+        border-collapse: collapse;
+    }
+    p{
+        display: inline-block;
+    }
+    h1 {
+        font-family: 'Lato', sans-serif;
+        text-align: left;
+    }
+
+    table, th, td {
+        font-family: 'Lato', sans-serif;  font-family: 'Lato', sans-serif;
+    }
+    th,td{
+        padding: 15px;
+
+    }
+    th{
+        background-color: #4CAF50;
+        color: white;
+    }
+    .title{
+        text-align: left;
+    }
+.info{
+     text-align: right
+}
+    td{
+        font-size: 35px;
+    }
+
+
+</style>
+<body>
+<h3>{{ title }} Top comment:</h3>
+<a href = "{{ link1 }}">Video Link </a>
+<br>
+<ul>
+    <li>{{ videocomment }}<li>
+
+</ul>
+<br>
+<br>
+<h3>{{title1}} Top comments:</h3>
+<a href = "{{ link2 }}">Video Link </a>
+<br>
+<ul>
+    <li>{{ videocomment1 }}<li>
+</ul>
+<br>
+<br>
+<h3>{{ title2 }} Top comments:</h3>
+<a href = "{{ link3 }}">Video Link </a>
+<br>
+<ul>
+    <li>{{ videocomment2 }}<li>
+</ul>
+<br>
+<br>
+<h3>{{ title3 }} Top comments:</h3>
+<a href = "{{ link4 }}">Video Link</a>
+<br>
+<ul>
+    <li>{{ videocomment3 }}<li>
+</ul>
+<br>
+<br>
+<h3>{{ title4 }} Top comments:</h3>
+<a href = "{{ link5 }}"> Video Link</a>
+<br>
+<ul>
+    <li>{{ videocomment4 }}<li>
+</ul>
+<br>
+</body>
+</html>

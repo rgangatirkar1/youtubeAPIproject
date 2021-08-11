@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+    #videodata {
+        font-family: 'Open Sans',sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #videodata td, #videodata th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #videodata tr:nth-child(even){background-color: #f2f2f2;}
+
+    #videodata tr:hover {background-color: #ddd;}
+
+    #videodata th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+    }
+</style>
+<body>
+<table id="videodata">
+<tr>
+    <th>Title</th>
+    <th>Link</th>
+    <th>Comments</th>
+</tr>
+
+    {% for i in range(5) %}
+        <tr>
+            <td>{{ data[i][0]}}</td>
+            <td><a href="https://www.youtube.com/watch?v={{ data[i][1]}}"> Link to Video</a></td>
+            <td>
+                1st comment: {{ data[i][2][0]}}<br>
+                2nd comment: {{ data[i][2][1]}} <br>
+                3rd Comment: {{ data[i][2][2]}}
+            </td>
+        </tr>
+{% endfor %}
+    </table>
+</body>
+</html>

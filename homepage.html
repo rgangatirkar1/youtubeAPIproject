@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    body{
+        font-family:'Open Sans', sans-serif;;
+    }
+    button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    input[type=text] {
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans',sans-serif;
+    }
+</style>
+<body>
+<h1>Enter a youtube search request:</h1>
+<form method="post" action="/" name="passdata">
+    <input type="text" id="searchquery" name="searchquery"/>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
